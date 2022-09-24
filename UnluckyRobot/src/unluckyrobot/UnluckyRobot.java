@@ -8,14 +8,12 @@ package unluckyrobot;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /**
  *
  * @author Danich Hang
  */
 public class UnluckyRobot {
-
-    /**
+ /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -110,7 +108,7 @@ public class UnluckyRobot {
         
         // keep asked if the input is not r, l, left, 'u' up, 'd' down)
         do {
-              System.out.print("Please input a valid direction: ");
+              System.out.print("Please input a valid direction(r = right, l = left, u = up, d = down): ");
               inputDirection = console.next().charAt(0);
         } while (! (isdirectionAcronym(inputDirection)));
      return inputDirection;
@@ -254,5 +252,6 @@ public class UnluckyRobot {
             return true;  
             return false;        
     }
+    
     
 }
